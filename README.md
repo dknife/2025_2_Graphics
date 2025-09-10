@@ -23,4 +23,4 @@
 
 ## Lec 1: OpenGL 소개
 
-[OpenGL 소개](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec01_Introduction2Graphics.pdf)
+[OpenGL 소개](https://github.com/dknife/2025_2_Graphics/blob/main/LectureNotes/Lec02_BasicGraphicsProgramming_Pres.pdf)
