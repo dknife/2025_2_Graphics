@@ -20,3 +20,7 @@
 ## Lec 0: 그래픽스 소개
 
 [그래픽스 소개](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec01_Introduction2Graphics.pdf)
+
+## Lec 1: OpenGL 소개
+
+[OpenGL 소개](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec01_Introduction2Graphics.pdf)
