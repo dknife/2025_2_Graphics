@@ -12,6 +12,14 @@
 
 강의 자료: 홈페이지 공개 자료 및 유인물
 
+## 사용환경
+
+* 프로그래밍 언어: Python
+* 핵심 패키지: PyOpenGL, glfw
+```
+% pip install PyOpenGL glfw
+```
+
 ## 과제
 
 ### 과제 1
