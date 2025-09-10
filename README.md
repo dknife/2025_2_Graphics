@@ -32,3 +32,7 @@
 ## Lec 1: OpenGL 소개
 
 [OpenGL 소개](https://github.com/dknife/2025_2_Graphics/blob/main/LectureNotes/Lec02_BasicGraphicsProgramming_Pres.pdf)
+
+* [파이썬 간단 소개](https://colab.research.google.com/drive/1gHI_fN4RDK4pkVe7TSN2-zFjrMBC-dR5?usp=sharing)
+
+* [실습1]
