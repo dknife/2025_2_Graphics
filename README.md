@@ -39,5 +39,5 @@
 
 ## Lec 2: Primitive의 이해
 
-[OpenGL 프로그래밍의 시작]()
+[OpenGL 프로그래밍의 시작](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec03_Primitives_Pres.pdf)
 
