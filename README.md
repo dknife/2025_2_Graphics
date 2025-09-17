@@ -43,4 +43,4 @@
 
 * [실습 1 간단한 그래픽 윈도우의 생성](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec02/0201_GLWindow.py)
 
-* (https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec02/0202_GLCoding.py）
+* [실습 2 오픈지엘 기본 코드](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec02/0202_GLCoding.py）
