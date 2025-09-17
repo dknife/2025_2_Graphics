@@ -41,3 +41,4 @@
 
 [OpenGL 프로그래밍의 시작](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec03_Primitives_Pres.pdf)
 
+* [실습 1 간단한 그래픽 윈도우의 생성](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec02/0201_GLWindow.py)
