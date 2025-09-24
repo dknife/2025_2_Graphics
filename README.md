@@ -53,4 +53,4 @@
 
 ## Lec 3: 카메라 투영의 이해
 
-[카메라 투영]()
+[카메라 투영](https://github.com/dknife/2025_2_Graphics/blob/main/LectureNotes/Lec04_CameraProjection_pres.pdf)
