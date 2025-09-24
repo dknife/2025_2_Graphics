@@ -2,6 +2,7 @@ import glfw
 from myglfw import *
 from OpenGL.GL import *
 from OpenGL.GLU import *
+import math
 
 # 축 그리기
 def drawAxes():
@@ -28,6 +29,34 @@ def drawTriangle():
     glVertex3f( 0.0, 0.5, 0)
     glEnd()
 
+def drawHelix():
+    glColor3f(1, 1, 0)
+    nPoints = 1000
+    glBegin(GL_LINE_STRIP)
+    for i in range(nPoints):
+        angle = i / 10.0
+        x, y = math.cos(angle), math.sin(angle)
+        glVertex3f(x, y, angle / 10)
+    glEnd()
+
+def drawTriangles():
+    glColor3f(1, 1, 0)
+    nTriangles = 10
+    step = 0.3 
+    half = step * (nTriangles // 2)
+    
+    for i in range(nTriangles):
+        glBegin(GL_LINE_LOOP)
+        glVertex3f(-0.5, -0.5, -half + i*step)
+        glVertex3f( 0.5, -0.5, -half + i*step)
+        glVertex3f( 0.0,  0.5, -half + i*step)
+        glEnd()
+
+def myScene():
+    drawTriangles() #drawHelix()
+    drawAxes()
+
+
 def initialize(window):
     glClearColor(0.0, 0.0, 0.0, 1.0)
 
@@ -46,14 +75,14 @@ def display(window):
 
     glMatrixMode(GL_MODELVIEW)
     glLoadIdentity()    
-    drawTriangle()
-    drawAxes()
+    
+    myScene()
 
     # view 2
     glViewport(w//2, 0, w//2, h)
     glMatrixMode(GL_PROJECTION)
     glLoadIdentity()
-    glOrtho(l*aspect_ratio, r*aspect_ratio, b, t, -10, 10)
+    glOrtho(-4 * aspect_ratio, 4 * aspect_ratio, -4, 4, -10, 10)
 
     glMatrixMode(GL_MODELVIEW)
     glLoadIdentity()
@@ -61,8 +90,7 @@ def display(window):
               0, 0, 0,  # target vector
               0, 1, 0)  # up vector
     
-    drawTriangle()
-    drawAxes()
+    myScene()
 
 def reshape(window, w, h) :
     pass
