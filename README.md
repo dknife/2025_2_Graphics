@@ -56,3 +56,5 @@
 [카메라 투영](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec04_CameraProjection_pres.pdf)
 
 * [공동 코드 myglfw.py](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec03/myglfw.py)
+
+* [공동 코드를 활용한 간단한 그리기](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec03/0301_camera.py)
