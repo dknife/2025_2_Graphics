@@ -59,4 +59,4 @@
 
 * [실습 1 공동 코드를 활용한 간단한 그리기](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec03/0301_camera.py)
 
-* [실습 2 종횡비를 이용한 glOrtho 설정](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec03/0302_glOrtho_noDistort.py）
+* [실습 2 종횡비를 이용한 glOrtho 설정](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec03/0302_glOrtho_noDistort.py)
