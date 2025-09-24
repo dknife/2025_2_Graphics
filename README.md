@@ -50,3 +50,7 @@
 * [프로젝트 １ 마우스를 이용한 정점 입력](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec02/project1_mouse.py)
 
 * [프로젝트 ２ 마우스와 키보드를 이용한 정점／프리미티브 입력](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec02/project2_mouse_key.py)
+
+## Lec 3: 카메라 투영의 이해
+
+[카메라 투영]()
