@@ -65,4 +65,4 @@
 
 * [실습 4 glOrtho 관측공간 제어](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec03/0304_glOrthoVisualize.py)
 
-* [실습 5 glFrustum 관측공간 제어](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec03/0304_glOrthoVisualize.py)
+* [실습 5 glFrustum 관측공간 제어](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec03/0305_frustumVisualize.py)
