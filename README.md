@@ -66,3 +66,7 @@
 * [실습 4 glOrtho 관측공간 제어](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec03/0304_glOrthoVisualize.py)
 
 * [실습 5 glFrustum 관측공간 제어](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec03/0305_frustumVisualize.py)
+
+## Lec 4: 렌더링 속도 개선
+
+[디스플레이 리스트와 정점 버퍼]()
