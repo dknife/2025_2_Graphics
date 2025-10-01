@@ -80,3 +80,5 @@
 * [실습 3 디스플레이 리스트로 렌더링 속도 개선](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec04/0403_complexPlane.py)
 
 * [실습 4 버텍스 버퍼를 이용한 렌더링 속도 개선](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec04/0404_vertexBuffer.py)
+
+* [실습 5 렌더링 기법 비교](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec04/0406_comparison.py)
