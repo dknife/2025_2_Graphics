@@ -71,4 +71,4 @@
 
 [디스플레이 리스트와 정점 버퍼](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec05_RenderingEfficiency_pres.pdf)
 
-* [개선된 공동 코드 myglfw.py](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec03/myglfw.py)
+* [개선된 공동 코드 myglfw.py](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec04/myglfw.py)
