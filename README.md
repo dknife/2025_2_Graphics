@@ -76,3 +76,5 @@
 * [실습 1 카메라와 평면 그려보기](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec04/0401_camera_00.py)
 
 * [실습 2 키보드를 이용하여 카메라 움직여 보기](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec04/0402_camera_move.py)
+
+* [실습 3 디스플레이 리스트로 렌더링 속도 개선](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec04/0403_complexPlane.py)
