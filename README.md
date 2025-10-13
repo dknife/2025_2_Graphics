@@ -82,3 +82,12 @@
 * [실습 4 버텍스 버퍼를 이용한 렌더링 속도 개선](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec04/0404_vertexBuffer.py)
 
 * [실습 5 렌더링 기법 비교](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec04/0406_comparison.py)
+
+
+### Lec 5: 메시 읽기
+
+[데이터]
+
+* [메시 데이터 예시](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/mesh.txt)
+* [소 메시 데이터](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/cow.txt)
+* [두개골 메시](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/skull.txt)
