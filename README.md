@@ -86,6 +86,8 @@
 
 ### Lec 5: 메시 읽기
 
+[메시 읽기]()
+
 [데이터]
 
 * [메시 데이터 예시](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/mesh.txt)
