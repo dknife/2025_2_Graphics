@@ -86,7 +86,7 @@
 
 ### Lec 5: 메시 읽기
 
-[메시 읽기]()
+[메시 읽기](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec06_MeshLoading_pres.pdf)
 
 [데이터]
 
