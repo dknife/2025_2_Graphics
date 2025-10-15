@@ -88,6 +88,8 @@
 
 [메시 읽기](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec06_MeshLoading_pres.pdf)
 
+* [실습 기본 코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Lec05)
+  
 [데이터]
 
 * [메시 데이터 예시](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/mesh.txt)
