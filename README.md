@@ -88,7 +88,7 @@
 
 [메시 읽기](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec06_MeshLoading_pres.pdf)
 
-* [가장 기본적인 메시 읽기 테스트]()
+* [가장 기본적인 메시 읽기 테스트](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code05)
 * [실습 기본 코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Lec05)
   
 [데이터]
