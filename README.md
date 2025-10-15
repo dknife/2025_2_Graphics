@@ -93,7 +93,7 @@
 * [가장 기본적인 메시 읽기 테스트](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code05)
 * [실습 기본 코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Lec05)
 * [빠른 면 그리기가 가능한 버전 1 - DisplayList](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code06)
-* 
+* [빠른 면 그리기가 가능한 버전 2 - DrawArrays DrawElements](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code06_drawElements)
 [데이터]
 
 * [메시 데이터 예시](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/mesh.txt)
