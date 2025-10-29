@@ -105,3 +105,7 @@
 ### Lec 6: 계층적 모델링
 
 [계층적 모델링](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec07_HierarchicalModeling_pres.pdf)
+
+#### 실습
+
+* [기본 코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code07_transform)
