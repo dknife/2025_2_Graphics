@@ -12,14 +12,14 @@ mymesh = Mesh.Mesh()
 angle = 0
 
 def initialize(window):
-    glClearColor(0.0, 0.0, 0.2, 1.0)
+    glClearColor(0.6, 0.6, 0.6, 1.0)
     glEnable(GL_DEPTH_TEST)
 
-    mymesh.loadMesh("./Code07_transform/cow.txt")
+    mymesh.loadMesh("./cow.txt")
     #mymesh.prepareDisplayList()
     mymesh.prepareForBufferRendering()
 
-    main_camera.eye = np.array([1.2,1.2,1])
+    main_camera.eye = np.array([3,4,5])
     main_camera.at = np.array([0,0,0])
     main_camera.up = np.array([0,1,0])
 
@@ -28,12 +28,37 @@ def display(window):
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
     
-    main_camera.apply()        
-    common.drawPlane()
+    main_camera.apply() 
     common.drawAxes()
 
+    # 이 지점에서 현재 모델뷰 행렬 모드이다.
+    common.drawAxes()
     glColor3f(1, 1, 0)
     mymesh.drawBuffer()
+
+    # 모델뷰 행렬을 변경하자
+    glTranslatef(2, 0, 0)
+    common.drawAxes()
+    glColor3f(1, 0, 0)    
+    mymesh.drawBuffer()
+
+    # 모델뷰 행렬을 변경하자
+    glTranslatef(0, 2, 0)
+    glRotatef(180, 0, 0, 1)
+    common.drawAxes()
+    glColor3f(0, 1, 1)    
+    mymesh.drawBuffer()
+
+    # 모델뷰 행렬을 변경하자
+    glTranslatef(2, 0, 0)
+    glRotatef(-90, 0, 1, 0)
+    glRotatef(180, 1, 0, 0)
+    common.drawAxes()
+    glColor3f(1, 1, 1)    
+    mymesh.drawBuffer()
+
+
+
 
 
 
