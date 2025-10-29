@@ -9,7 +9,12 @@ import common
 import Sphere
 
 main_camera = Camera.Camera()
+
+t = 0
 Sun = Sphere.Sphere(1)
+Earth = Sphere.Sphere(0.2, 6, 6)
+Moon = Sphere.Sphere(0.1, 5, 5)
+Mars = Sphere.Sphere(0.2, 6, 6)
 
 def drawPart(width, height, depth):
     glPushMatrix()
@@ -27,12 +32,43 @@ def initialize(window):
     main_camera.up = np.array([0,1,0])
 
 def display(window):
+    global t
+    t += 0.1
+
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
     
     main_camera.apply() 
     common.drawAxes()
 
+    glPushMatrix()
+    glColor3f(1, 0, 0)
+    glRotatef(t, 0, 1, 0)
     Sun.draw()
+    glPopMatrix()
+
+    glPushMatrix() # 지구계로 들어가기 전에 변환 기록
+    
+    ### 지구계
+    glRotatef(t*2, 0, 1, 0) # 공전
+    glTranslatef(5, 0, 0)  
+    glPushMatrix()
+    glRotatef(t*200, 0, 1, 0) # 자전
+    glColor3f(0, 0.5, 1)
+    Earth.draw()
+    glPopMatrix()
+    
+    glRotatef(t*50, 0, 1, 0)   # 공전    
+    glTranslatef(0.4, 0, 0)
+    glColor3f(1, 1, 1)
+    Moon.draw()
+
+    glPopMatrix() # 지구계의 변환을 삭제
+
+    glRotatef(t*5, 0, 1, 0) # 공전
+    glTranslatef(7, 0, 0)  
+    glRotatef(t*100, 0, 1, 0) # 자전
+    glColor3f(1, 0.5, 0)
+    Mars.draw()
 
 
 
