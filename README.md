@@ -104,4 +104,4 @@
 
 ### Lec 6: 계층적 모델링
 
-[계층적 모델링]()
+[계층적 모델링](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec07_HierarchicalModeling_pres.pdf)
