@@ -113,3 +113,7 @@
 * [로봇 기본 코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code07_robot)
 
 * [태양계 기본 코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code07_solarSystem)
+
+### Lec 7: 색과 조명
+
+[색과 조명](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec08_Colors_Lights_pres.pdf)
