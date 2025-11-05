@@ -117,3 +117,8 @@
 ### Lec 7: 색과 조명
 
 [색과 조명](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec08_Colors_Lights_pres.pdf)
+
+#### 실습
+
+* [색상의 지정](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Code08_Color/01ColorTest.py)
+  
