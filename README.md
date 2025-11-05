@@ -84,7 +84,7 @@
 * [실습 5 렌더링 기법 비교](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec04/0406_comparison.py)
 
 
-### Lec 5: 메시 읽기
+## Lec 5: 메시 읽기
 
 [메시 읽기](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec06_MeshLoading_pres.pdf)
 
@@ -102,7 +102,7 @@
 * [소 메시 데이터](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/cow.txt)
 * [두개골 메시](https://github.com/dknife/2023Graphics/blob/main/Ex/Ex06/skull.txt)
 
-### Lec 6: 계층적 모델링
+## Lec 6: 계층적 모델링
 
 [계층적 모델링](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec07_HierarchicalModeling_pres.pdf)
 
@@ -114,7 +114,7 @@
 
 * [태양계 기본 코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code07_solarSystem)
 
-### Lec 7: 색과 조명
+## Lec 7: 색과 조명
 
 [색과 조명](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec08_Colors_Lights_pres.pdf)
 
