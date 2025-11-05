@@ -124,4 +124,4 @@
 
 * [조명 설정](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Code08_Color/02LightModel.py)
   
-* [메시 읽기 기본 코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code08_Color)
+* [메시에 재질 설정하고 조명 비추기](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code08_Color)
