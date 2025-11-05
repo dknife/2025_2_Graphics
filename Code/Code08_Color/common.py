@@ -12,6 +12,7 @@ def drawPlane() :
     startZ = -w/2
     
     glColor3f(0.3, 0.3, 0)
+    glNormal3f(0, 1, 0)
     glBegin(GL_QUADS)
     for i in range(n):
         for j in range(n):
