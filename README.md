@@ -121,4 +121,5 @@
 #### 실습
 
 * [색상의 지정](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Code08_Color/01ColorTest.py)
-  
+
+* [조명 설정](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Code08_Color/02LightModel.py)
