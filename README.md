@@ -125,3 +125,7 @@
 * [조명 설정](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Code08_Color/02LightModel.py)
   
 * [메시에 재질 설정하고 조명 비추기](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code08_Color)
+
+## Lec 8: 텍스처 매핑
+
+[텍스처 매핑 - 다중텍스처, 자동텍스처 좌표](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec10_TextureMapping.pdf)
