@@ -134,5 +134,5 @@
 
 * [실습 2 랜덤 이미지 사용](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code10_Texture_B)
 
-** [이미지 파일 데이터](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec10_Texture/photo.jpg)
+  * [이미지 파일 데이터](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec10_Texture/photo.jpg)
 
