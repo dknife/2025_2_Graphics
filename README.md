@@ -137,4 +137,5 @@
 * [실습 3 이미지 파일 로딩하여 사용하기]()
   
   * [이미지 파일 데이터](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec10_Texture/photo.jpg)
+  * [이미지 파일 데이터](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec10_Texture/photo2.png)
 
