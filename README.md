@@ -131,3 +131,7 @@
 [텍스처 매핑 - 다중텍스처, 자동텍스처 좌표](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec10_TextureMapping.pdf)
 
 * [실습 1 기본코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code10_Texture_A)
+
+* [실습 2 랜덤 이미지 사용](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code10_Texture_B)
+
+* 
