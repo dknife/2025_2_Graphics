@@ -140,3 +140,5 @@
   * [이미지 파일 데이터](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec10_Texture/photo2.png)
 
 * [실습 4 멀티텍스처](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code10_Texture_D)
+
+* [스피어맵 이미지](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec10_Texture/spheremap.png)
