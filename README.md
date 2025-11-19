@@ -143,3 +143,6 @@
 
 * [실습 5 메시 로딩 후 텍스처 적용](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Code10_Texture_Mesh)
   * [스피어맵 이미지](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Lec10_Texture/spheremap.png)
+ 
+### Lec 9: Lighting / Texture 처리 클래스의 구현
+
