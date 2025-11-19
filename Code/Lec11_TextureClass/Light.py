@@ -57,7 +57,7 @@ class Light:
             ### spot light인 경우 이를 설정한다.
             if spotCutoff > 0.0: # spotlight로 설정
                 spotDir = np.array( spotDir, dtype = np.float32)
-                spotDir = spotDir / np.linalg.norm(spotDir)  # 정규화, 스포트 라이트가 쳐다보는 방향
+                #spotDir = spotDir / np.linalg.norm(spotDir)  # 정규화, 스포트 라이트가 쳐다보는 방향
 
                 glLightfv(GL_LIGHT0 + lightID, GL_SPOT_DIRECTION, spotDir)
                 glLightfv(GL_LIGHT0 + lightID, GL_SPOT_CUTOFF, spotCutoff)
