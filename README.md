@@ -146,3 +146,4 @@
  
 ### Lec 9: Lighting / Texture 처리 클래스의 구현
 
+*[실습 1 - 기본코드 간단한 조명 설치](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Lec11_TextureClass)
