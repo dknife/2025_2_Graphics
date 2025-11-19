@@ -82,9 +82,12 @@ class FixedFunctionTexture:
         img = Image.open(filename).convert("RGBA")
         w, h = img.size
         data = np.array(img, dtype=np.uint8).flatten()
+        
+        return data, w, h
 
         
 
         
+
 
         
