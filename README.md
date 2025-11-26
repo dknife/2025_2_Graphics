@@ -156,6 +156,9 @@
   - myglfw.py 그대로 활용
 * [실습 2 뷰, 투영 행렬 조작 및 프래그먼트 색상 조작](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/00_basic2.py)
 
-* [실습 3 카메라 클래스의 제작](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/Camera.py)
-* 
+카메라 실습 
+
+  - [실습 3 카메라 클래스의 제작](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/Camera.py)
+  
+* [실습 4 카메라 테스트](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/02_camera_test.py)
   
