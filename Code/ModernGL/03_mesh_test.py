@@ -19,12 +19,16 @@ uniform float add_position;
 
 out vec3 vColor;
 
+float rand(float x) {
+    return fract(sin(x) * 43758.5453123);
+}
+
 void main()
 {
     float a = add_position;
     vec3 pos = aPos;
-    pos.x = pos.x + a;
-    pos.z = pos.z + a;
+    pos.x = pos.x + a + 0.05*rand(pos.z + a);
+    pos.z = pos.z + a + 0.05*rand(pos.x + a*a);
     gl_Position = projection * view * vec4(pos, 1.0);
     vColor = normalize(aNormal) * 0.5 + 0.5; // 법선을 [0,1] 범위 색상으로
 }
@@ -75,7 +79,6 @@ def display(window):
     glClearColor(0.1, 0.1, 0.12, 1.0)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
-    print(add_loc)
     camera.apply(shader)
     glUniform1f(add_loc, 0.0)
     mesh.draw()  # Mesh 렌더링    
