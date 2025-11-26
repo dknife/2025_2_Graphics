@@ -150,5 +150,9 @@
 
 ### Lec 10: Modern OpenGL Coding
 
-* [현대적 Core Profile에 따른 코딩 방법](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec11_ModernArchitecture.pdf)
+[현대적 Core Profile에 따른 코딩 방법](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec11_ModernArchitecture.pdf)
+
+* [실습 1 쉐이더와 Core Profile을 이용한 기본 코딩](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/00_basic.py)
+  - myglfw.py 그대로 활용
+* 
   
