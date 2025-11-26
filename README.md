@@ -158,7 +158,12 @@
 
 카메라 실습 
 
-  - [실습 3 카메라 클래스의 제작](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/Camera.py)
+* [실습 3 카메라 클래스의 제작](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/Camera.py)
   
 * [실습 4 카메라 테스트](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/02_camera_test.py)
   
+메시 실습
+
+* [실습 5 메시 클래스의 제작]()
+  
+* [실습 6 메시 테스트]()
