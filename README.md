@@ -154,5 +154,5 @@
 
 * [실습 1 쉐이더와 Core Profile을 이용한 기본 코딩](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/00_basic.py)
   - myglfw.py 그대로 활용
-* 
+* [실습 2 뷰, 투영 행렬 조작 및 프래그먼트 색상 조작](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/00_basic2.py)
   
