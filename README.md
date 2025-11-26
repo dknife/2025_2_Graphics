@@ -164,6 +164,6 @@
   
 메시 실습
 
-* [실습 5 메시 클래스의 제작]()
+* [실습 5 메시 클래스의 제작](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/Mesh.py)
   
-* [실습 6 메시 테스트]()
+* [실습 6 메시 테스트](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/02_mesh.py)
