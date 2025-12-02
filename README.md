@@ -169,3 +169,9 @@
 * [실습 6 메시 테스트](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/02_mesh.py)
   
 * [실습 7 메시를 다른 위치에 여러 번 그리기](https://github.com/dknife/2025_2_Graphics/blob/main/Code/ModernGL/03_mesh_test.py)
+
+### Lec 11: MacOS 호환 
+
+MacOS에서는 OpenGL Core Profile 4.3 지원하지 않음 (하위 프로파일 지정)
+
+[코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final)
