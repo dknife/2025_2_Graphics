@@ -1,0 +1,112 @@
+# main_cow_light.py
+import glfw
+from OpenGL.GL import *
+from OpenGL.GL.shaders import compileProgram, compileShader
+import numpy as np
+from Camera import Camera
+from Mesh import Mesh
+from Light import Light
+from myglfw import *
+import os
+
+def load_shader_source(filename):
+    with open(filename, 'r', encoding='utf-8') as file:
+        return file.read()
+
+
+
+# ────────── 전역 객체 ──────────
+shader = None
+camera = None
+mesh = None
+light = None
+
+angle = 0.0
+
+# ────────── OpenGL 초기화 ──────────
+def init_gl(window):
+    global shader, camera, mesh, light
+
+    # 1. 먼저 셰이더 컴파일 (VAO 없이도 가능!)
+    vert_path = os.path.join('./Final/basic/', 'vertex.vs')
+    frag_path = os.path.join('./Final/basic/', 'frag.fs')
+
+    vs_source = load_shader_source(vert_path)
+    fs_source = load_shader_source(frag_path)
+
+    vertex_shader = compileShader(vs_source, GL_VERTEX_SHADER)
+    fragment_shader = compileShader(fs_source, GL_FRAGMENT_SHADER)
+
+    shader = compileProgram(vertex_shader, fragment_shader, validate = False)
+    glUseProgram(shader)
+
+    # 강제로 VAO 바인딩해서 validate 통과시키기
+    dummy_vao = glGenVertexArrays(1)
+    glBindVertexArray(dummy_vao)
+    glValidateProgram(shader)  # 이제 통과됨!
+    glBindVertexArray(0)
+
+    # 이제 VAO 생성해도 됨 → 여기서부터 mesh 초기화!
+    mesh = Mesh()
+    mesh.loadMesh("./Final/cow.txt")
+    mesh.setupGL()          # 이제 VAO 생성됨
+
+    # Light, Camera 등 나머지 초기화
+    light = Light()
+    light.add_light(0, position=[2.0, 3.0, 2.0, 1.0], ambient=[0.1,0.1,0.1],
+                    diffuse=[1.0,1.0,0.0], specular=[1.0,1.0,1.0], shininess=120.0)
+    light.add_light(1, position=[-2.0, 1.0, 2.0, 1.0], ambient=[0.1,0.1,0.1],
+                    diffuse=[0.0,1.0,1.0], specular=[1.0,1.0,1.0], shininess=120.0)
+
+    glEnable(GL_DEPTH_TEST)
+    camera = Camera()
+
+    print("모든 초기화 완료! 소가 나타납니다!")
+
+# ────────── 화면 크기 변화 ──────────
+def reshape(window, w, h):
+    glViewport(0,0,w,h)
+    camera.set_aspect(w,h)
+
+# ────────── 렌더링 ──────────
+def display(window):
+    global angle
+
+    glClearColor(0.1,0.1,0.12,1.0)
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
+
+    angle += 0.5
+    x = angle * np.pi / 180.0
+    camera.eye = np.array([3.0 * np.sin(x), 1.5, 3.0 * np.cos(x)])
+    camera.look_at(camera.eye, [0,0,0], [0,1,0])
+    camera.apply(shader)
+
+    # 카메라 위치 uniform 전달
+    eyePosLoc = glGetUniformLocation(shader, "eyePos")
+    glUniform3fv(eyePosLoc, 1, camera.eye)
+
+    # Light uniform 전달
+    data = light.get_active_light_data()
+    for i in range(light.MAX_LIGHTS):
+        prefix = f"lights[{i}]"
+        glUniform3fv(glGetUniformLocation(shader, f"{prefix}.position"), 1, data['positions'][i][:3])
+        glUniform3fv(glGetUniformLocation(shader, f"{prefix}.ambient"), 1, data['ambient'][i])
+        glUniform3fv(glGetUniformLocation(shader, f"{prefix}.diffuse"), 1, data['diffuse'][i])
+        glUniform3fv(glGetUniformLocation(shader, f"{prefix}.specular"), 1, data['specular'][i])
+        glUniform1f(glGetUniformLocation(shader, f"{prefix}.shininess"), data['shininess'][i])
+        glUniform1i(glGetUniformLocation(shader, "lightActive["+str(i)+"]"), int(data['active'][i]))
+
+
+    mesh.draw()
+
+# ────────── 키보드 이벤트 ──────────
+def keyboard(window, key, scancode, action, mods):
+    if key==glfw.KEY_ESCAPE and action==glfw.PRESS:
+        glfw.set_window_should_close(window, True)
+
+# ────────── 프로그램 실행 ──────────
+window = initialize_window(900,700,"Cow Mesh with Phong Light")
+register_initGL(window, init_gl)
+register_reshape(window, reshape)
+register_keyboard(window, keyboard)
+main_loop(window, display)
