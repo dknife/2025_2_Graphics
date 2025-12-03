@@ -14,6 +14,11 @@ shader_loc = './texture/'
 mesh_loc = './'
 texture_loc = './spheremap/'
 
+control_forward = False
+control_backward = False
+control_left = False
+control_right = False
+
 ######################################
 from PIL import Image
 ######################################
@@ -181,20 +186,38 @@ def display(window):
     glDrawElementsInstanced(GL_TRIANGLES, mesh.nF * 3, GL_UNSIGNED_INT, None, 10000)
     glBindVertexArray(0)
 
+    if control_forward :
+        camera.forward(step = 0.1)
+    if control_backward :
+        camera.backward(step = 0.1)
+    if control_left :
+        camera.left(angle_step=5)
+    if control_right:
+        camera.right(angle_step =5)
+    
+
 
 # ────────── 키보드 이벤트 ──────────
 def keyboard(window, key, scancode, action, mods):
+    global control_forward, control_backward, control_left, control_right
     if key==glfw.KEY_ESCAPE and action==glfw.PRESS:
         glfw.set_window_should_close(window, True)
-
     if key==glfw.KEY_W and action==glfw.PRESS:
-        camera.forward()
+        control_forward = True        
+    if key==glfw.KEY_W and action==glfw.RELEASE:
+        control_forward = False
     if key==glfw.KEY_S and action==glfw.PRESS:
-        camera.backward()
-    if key==glfw.KEY_A and action==glfw.PRESS:
-        camera.left()
+        control_backward = True
+    if key==glfw.KEY_S and action==glfw.RELEASE:
+        control_backward = False
+    if key==glfw.KEY_A and action==glfw.PRESS:        
+        control_left = True
+    if key==glfw.KEY_A and action==glfw.RELEASE:
+        control_left = False
     if key==glfw.KEY_D and action==glfw.PRESS:
-        camera.right()
+        control_right = True
+    if key==glfw.KEY_D and action==glfw.RELEASE:
+        control_right = False
 
 
 # ────────── 프로그램 실행 ──────────
