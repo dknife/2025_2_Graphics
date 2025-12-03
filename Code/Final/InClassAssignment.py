@@ -158,10 +158,7 @@ def display(window):
     glClearColor(0.1,0.1,0.12,1.0)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
-    angle += 0.03
-    x = angle * np.pi / 180.0
-    camera.eye = np.array([50.0 * np.sin(x), 1+1*np.sin(10.*x), 50.0 * np.cos(x)])
-    camera.look_at(camera.eye, [0,0,0], [0,1,0])
+
     camera.apply(shader)
 
     # 카메라 위치 uniform 전달
@@ -191,13 +188,13 @@ def keyboard(window, key, scancode, action, mods):
         glfw.set_window_should_close(window, True)
 
     if key==glfw.KEY_W and action==glfw.PRESS:
-        print('w')
+        camera.forward()
     if key==glfw.KEY_S and action==glfw.PRESS:
-        print('s')
+        camera.backward()
     if key==glfw.KEY_A and action==glfw.PRESS:
-        print('a')
+        camera.left()
     if key==glfw.KEY_D and action==glfw.PRESS:
-        print('d')
+        camera.right()
 
 
 # ────────── 프로그램 실행 ──────────
