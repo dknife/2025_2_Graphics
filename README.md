@@ -194,5 +194,5 @@ MacOS에서는 OpenGL Core Profile 4.3 지원하지 않음 (하위 프로파일 
     - [APP](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final/04_texture.py)
 
 도전과제 - 카메라를 자유롭게 이동하여 소떼들을 살펴보자
-* [New Camera: FPSCampy](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Final/FPSCam.py)
+* [New Camera: FPSCam.py](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Final/FPSCam.py)
 * [App](https://github.com/dknife/2025_2_Graphics/blob/main/Code/Final/InClassAssignment.py)
