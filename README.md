@@ -175,3 +175,5 @@
 MacOS에서는 OpenGL Core Profile 4.3 지원하지 않음 (하위 프로파일 지정)
 
 [코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final)
+
+* [실습 1 - 간단한 쉐이더 활용]()
