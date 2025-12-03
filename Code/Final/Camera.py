@@ -40,9 +40,9 @@ def look_at(eye, at, up) -> np.ndarray:
 
 class Camera:
     def __init__(self, eye=None, at=None, up=None):
-        self.eye = np.array(eye or [0, 1, 3], dtype=np.float32)
-        self.at  = np.array(at  or [0, 0, 0], dtype=np.float32)
-        self.up  = np.array(up  or [0, 1, 0], dtype=np.float32)
+        self.eye = np.array([0, 1, 3], dtype=np.float32)
+        self.at  = np.array([0, 0, 0], dtype=np.float32)
+        self.up  = np.array([0, 1, 0], dtype=np.float32)
 
         self.fovY   = 60.0
         self.aspect = 1.0
