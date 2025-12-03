@@ -187,3 +187,7 @@ MacOS에서는 OpenGL Core Profile 4.3 지원하지 않음 (하위 프로파일 
 * [실습 3 -  offset buffer 전달 + shader instancing]
     - [SHADERS](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final/manyCows_better)
     - [APP](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final/02_manyCows_better.py)
+ 
+* [실습 3 -  Sheremap 적용]
+    - [SHADERS](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final/texture)
+    - [APP](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final/04_texture.py)
