@@ -176,4 +176,10 @@ MacOS에서는 OpenGL Core Profile 4.3 지원하지 않음 (하위 프로파일 
 
 [코드](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final)
 
-* [실습 1 - 간단한 쉐이더 활용](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final/basic)
+* [실습 1 - 간단한 쉐이더 활용]
+    - [SHADERS](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final/basic)
+    - [APP](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final/00_basic.py)
+
+* [실습 2 -  Uniform 변수 전달]
+    - [SHADERS](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final/manyCows)
+    - [APP](https://github.com/dknife/2025_2_Graphics/tree/main/Code/Final/01_manyCows.py)
