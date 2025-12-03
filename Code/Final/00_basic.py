@@ -53,9 +53,9 @@ def init_gl(window):
 
     # Light, Camera 등 나머지 초기화
     light = Light()
-    light.add_light(0, position=[2.0, 3.0, 2.0, 1.0], ambient=[0.1,0.1,0.1],
+    light.add_light(0, position=[2.0, 13.0, 2.0, 0.0], ambient=[0.1,0.1,0.1],
                     diffuse=[1.0,1.0,0.0], specular=[1.0,1.0,1.0], shininess=120.0)
-    light.add_light(1, position=[-2.0, 1.0, 2.0, 1.0], ambient=[0.1,0.1,0.1],
+    light.add_light(1, position=[-2.0, 1.0, -2.0, 0.0], ambient=[0.1,0.1,0.1],
                     diffuse=[0.0,1.0,1.0], specular=[1.0,1.0,1.0], shininess=120.0)
 
     glEnable(GL_DEPTH_TEST)
@@ -89,7 +89,7 @@ def display(window):
     data = light.get_active_light_data()
     for i in range(light.MAX_LIGHTS):
         prefix = f"lights[{i}]"
-        glUniform3fv(glGetUniformLocation(shader, f"{prefix}.position"), 1, data['positions'][i][:3])
+        glUniform4fv(glGetUniformLocation(shader, f"{prefix}.position"), 1, data['positions'][i])
         glUniform3fv(glGetUniformLocation(shader, f"{prefix}.ambient"), 1, data['ambient'][i])
         glUniform3fv(glGetUniformLocation(shader, f"{prefix}.diffuse"), 1, data['diffuse'][i])
         glUniform3fv(glGetUniformLocation(shader, f"{prefix}.specular"), 1, data['specular'][i])

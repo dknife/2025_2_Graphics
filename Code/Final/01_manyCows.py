@@ -53,7 +53,7 @@ def init_gl(window):
 
     # Light, Camera 등 나머지 초기화
     light = Light()
-    light.add_light(0, position=[2.0, 3.0, 2.0, 1.0], ambient=[0.1,0.1,0.1],
+    light.add_light(0, position=[2.0, 13.0, 2.0, 0.0], ambient=[0.1,0.1,0.1],
                     diffuse=[1.0,1.0,0.0], specular=[1.0,1.0,1.0], shininess=120.0)
     light.add_light(1, position=[-2.0, 1.0, -2.0, 1.0], ambient=[0.1,0.1,0.1],
                     diffuse=[0.0,1.0,1.0], specular=[1.0,1.0,1.0], shininess=120.0)
@@ -75,9 +75,9 @@ def display(window):
     glClearColor(0.1,0.1,0.12,1.0)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT)
 
-    angle += 0.5
+    angle += 0.35
     x = angle * np.pi / 180.0
-    camera.eye = np.array([200.0 * np.sin(x), 20+10*np.sin(10.*x), 200.0 * np.cos(x)])
+    camera.eye = np.array([50.0 * np.sin(x), 5+np.sin(10.*x), 50.0 * np.cos(x)])
     camera.look_at(camera.eye, [0,0,0], [0,1,0])
     camera.apply(shader)
 
@@ -89,7 +89,7 @@ def display(window):
     data = light.get_active_light_data()
     for i in range(light.MAX_LIGHTS):
         prefix = f"lights[{i}]"
-        glUniform3fv(glGetUniformLocation(shader, f"{prefix}.position"), 1, data['positions'][i][:3])
+        glUniform4fv(glGetUniformLocation(shader, f"{prefix}.position"), 1, data['positions'][i])
         glUniform3fv(glGetUniformLocation(shader, f"{prefix}.ambient"), 1, data['ambient'][i])
         glUniform3fv(glGetUniformLocation(shader, f"{prefix}.diffuse"), 1, data['diffuse'][i])
         glUniform3fv(glGetUniformLocation(shader, f"{prefix}.specular"), 1, data['specular'][i])
@@ -99,7 +99,7 @@ def display(window):
     for i in range(100):
         for j in range(100):
             offsetLoc = glGetUniformLocation(shader, "offset")
-            glUniform2fv(offsetLoc, 1, np.array([i*2, j*2], dtype=float))
+            glUniform2fv(offsetLoc, 1, np.array([i*2-50, j*2-50], dtype=float))
 
             mesh.draw()
 

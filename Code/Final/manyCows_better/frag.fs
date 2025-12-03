@@ -30,7 +30,7 @@ void main()
         vec3 lightDir;
         if (lights[i].position.w == 0.0) {
             // 방향광: position.xyz = 빛이 오는 방향 (w = 0)
-            lightDir = normalize(-lights[i].position.xyz);
+            lightDir = normalize(lights[i].position.xyz);
         } else {
             // 점광원: position.xyz = 광원 위치 (w = 1)
             lightDir = normalize(lights[i].position.xyz - FragPos);

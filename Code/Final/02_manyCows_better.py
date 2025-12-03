@@ -118,7 +118,7 @@ def display(window):
     data = light.get_active_light_data()
     for i in range(light.MAX_LIGHTS):
         prefix = f"lights[{i}]"
-        glUniform4fv(glGetUniformLocation(shader, f"{prefix}.position"), 1, data['positions'][i][:3])
+        glUniform4fv(glGetUniformLocation(shader, f"{prefix}.position"), 1, data['positions'][i])
         glUniform3fv(glGetUniformLocation(shader, f"{prefix}.ambient"), 1, data['ambient'][i])
         glUniform3fv(glGetUniformLocation(shader, f"{prefix}.diffuse"), 1, data['diffuse'][i])
         glUniform3fv(glGetUniformLocation(shader, f"{prefix}.specular"), 1, data['specular'][i])

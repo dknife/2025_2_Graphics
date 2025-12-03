@@ -1,6 +1,6 @@
 #version 330 core
 struct Light {
-    vec3 position;
+    vec4 position;
     vec3 ambient;
     vec3 diffuse;
     vec3 specular;
@@ -25,7 +25,14 @@ void main()
     for(int i=0; i<MAX_LIGHTS; i++){
         if(lightActive[i] == 0) continue;  // struct 대신 별도 uniform 사용
 
-        vec3 lightDir = normalize(lights[i].position - FragPos);
+        vec3 lightDir;
+        if (lights[i].position.w == 0.0) {
+            // 방향광: position.xyz = 빛이 오는 방향 (w = 0)
+            lightDir = normalize(lights[i].position.xyz);
+        } else {
+            // 점광원: position.xyz = 광원 위치 (w = 1)
+            lightDir = normalize(lights[i].position.xyz - FragPos);
+        }
         float diff = max(dot(norm, lightDir), 0.0);
         vec3 reflectDir = reflect(-lightDir, norm);
         float spec = pow(max(dot(viewDir, reflectDir), 0.0), lights[i].shininess);
