@@ -13,8 +13,6 @@ def load_shader_source(filename):
     with open(filename, 'r', encoding='utf-8') as file:
         return file.read()
 
-
-
 # ────────── 전역 객체 ──────────
 shader = None
 camera = None
@@ -23,6 +21,7 @@ light = None
 
 angle = 0.0
 
+##########################################################################################
 def shader_instancing():
     # init_gl() 안에 추가
     N = 100
@@ -47,9 +46,12 @@ def shader_instancing():
 
     glEnableVertexAttribArray(2)
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 0, None)
-    glVertexAttribDivisor(2, 1)   # 이게 핵심! 인스턴스별로 하나씩!
+    ###############################################
+    glVertexAttribDivisor(2, 1)   # 이게 핵심! 인스턴스별로 하나씩 끊어서 인스턴스에 전달
+    ###############################################
 
     glBindVertexArray(0)
+###################################################################################################
 
 # ────────── OpenGL 초기화 ──────────
 def init_gl(window):
@@ -78,7 +80,10 @@ def init_gl(window):
     mesh = Mesh()
     mesh.loadMesh("./Final/cow.txt")
     mesh.setupGL()          # 이제 VAO 생성됨
+
+    ####################################
     shader_instancing()
+    ####################################
 
     # Light, Camera 등 나머지 초기화
     light = Light()
@@ -125,10 +130,11 @@ def display(window):
         glUniform1f(glGetUniformLocation(shader, f"{prefix}.shininess"), data['shininess'][i])
         glUniform1i(glGetUniformLocation(shader, "lightActive["+str(i)+"]"), int(data['active'][i]))
 
-    #한 번만 그리면 10,000마리 소가 동시에 나옴!!!
+    #한 번만 그리면 10,000마리 소가 동시에 나옴!!! ##########################################
     glBindVertexArray(mesh.vao)
     glDrawElementsInstanced(GL_TRIANGLES, mesh.nF * 3, GL_UNSIGNED_INT, None, 10000)
     glBindVertexArray(0)
+    ######################################################################################
 
     #for i in range(100):
     #    for j in range(100):
@@ -148,3 +154,4 @@ register_initGL(window, init_gl)
 register_reshape(window, reshape)
 register_keyboard(window, keyboard)
 main_loop(window, display)
+
