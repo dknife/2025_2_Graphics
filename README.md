@@ -199,4 +199,4 @@ MacOS에서는 OpenGL Core Profile 4.3 지원하지 않음 (하위 프로파일 
 
 ### Lec 12: 단답형 문제 풀이
 
-[문제 후보](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/Lec11_ModernArchitecture.pdf)
+[문제 후보](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/%EB%AC%B8%EC%A0%9C%ED%9B%84%EB%B3%B4_A.pdf)
