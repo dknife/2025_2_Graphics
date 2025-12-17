@@ -1,6 +1,6 @@
 # 2025_2 3D 그래픽스 프로그래밍 (게임공학과 전공교과)
 
-## [기말고사]()
+## [기말고사](https://github.com/dknife/2025_2_Graphics/raw/main/LectureNotes/202502_%EA%B8%B0%EB%A7%90%EA%B3%A0%EC%82%AC_%EA%B7%B8%EB%9E%98%ED%94%BD%EC%8A%A4.pdf)
 
 * 기말고사 배점: 선다형 50점 + 구현형 50점
 
